@@ -1,0 +1,155 @@
+openapi: 3.0.0
+info:
+  title: Express API Server Test Suite
+  description: OpenAPI specification for testing Express API server endpoints
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /all-users:
+    get:
+      summary: Retrieve all users
+      responses:
+        '200':
+          description: Successful response with an array of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+  /single-user/{id}:
+    get:
+      summary: Retrieve a single user by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response with the user object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User not found
+  /create-user:
+    post:
+      summary: Create a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewUser'
+      responses:
+        '201':
+          description: User created successfully
+  /update-user/{id}:
+    patch:
+      summary: Update an existing user
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUser'
+      responses:
+        '200':
+          description: User updated successfully
+  /update-f-user/{id}:
+    put:
+      summary: Replace an existing user
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUser'
+      responses:
+        '200':
+          description: User replaced successfully
+  /delete-user/{id}:
+    delete:
+      summary: Delete a user by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: User deleted successfully
+  /batch-users-req:
+    get:
+      summary: Retrieve a batch of users with pagination
+      parameters:
+        - in: query
+          name: pg
+          required: true
+          schema:
+            type: integer
+        - in: query
+          name: lm
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response with an array of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        phone_number:
+          type: string
+        is_active:
+          type: boolean
+    NewUser:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        phone_number:
+          type: string
+        status:
+          type: boolean
+    UpdateUser:
+      type: object
+      properties:
+        phone_number:
+          type: string
+        is_active:
+          type: boolean

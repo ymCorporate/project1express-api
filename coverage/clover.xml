@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1711706375031" clover="3.2.0">
+  <project timestamp="1711706375031" name="All files">
+    <metrics statements="57" coveredstatements="57" conditionals="8" coveredconditionals="6" methods="15" coveredmethods="15" elements="80" coveredelements="78" complexity="0" loc="57" ncloc="57" packages="2" files="3" classes="3"/>
+    <package name="knextest">
+      <metrics statements="52" coveredstatements="52" conditionals="4" coveredconditionals="4" methods="15" coveredmethods="15"/>
+      <file name="knexfile.js" path="/Users/manjunath/Desktop/Folders/WebDev/training@talview/Backend/knextest/knexfile.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="server.js" path="/Users/manjunath/Desktop/Folders/WebDev/training@talview/Backend/knextest/server.js">
+        <metrics statements="51" coveredstatements="51" conditionals="4" coveredconditionals="4" methods="15" coveredmethods="15"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="105" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="knextest.db">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <file name="knex.js" path="/Users/manjunath/Desktop/Folders/WebDev/training@talview/Backend/knextest/db/knex.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
